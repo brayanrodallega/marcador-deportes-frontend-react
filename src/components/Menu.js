@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/offcanvas'
+import 'bootstrap/js/dist/dropdown'
 
 class Menu extends Component {
   render() {
