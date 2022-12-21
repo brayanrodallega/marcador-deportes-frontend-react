@@ -1,5 +1,3 @@
-// import logo from "./logo.svg";
-// import "./App.css";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +5,8 @@ import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import React, { Component } from "react";
 
-const url = "http://localhost:9000/api/usuarios";
+const enpoints = require('../connections/enpoints');
+const url = enpoints.USUARIOS;
 const fieldid = 'usu'
 
 class PageUsuarios extends Component {
@@ -112,7 +111,7 @@ class PageUsuarios extends Component {
     const form = this.state.form
 
     return (
-      <div className="App">
+      <div className="App d-flex flex-column align-items-center justify-content-center" style={{margin: '0 70px 0'}}>
         <br />
         <br />
         <br />
@@ -122,7 +121,6 @@ class PageUsuarios extends Component {
         <table className="table ">
           <thead>
             <tr>
-              <th>ID</th>
               <th>Email</th>
               <th>Clave</th>
               <th>Nombre</th>
@@ -134,7 +132,6 @@ class PageUsuarios extends Component {
             {this.state.data.map((usuario) => {
               return (
                 <tr>
-                  <td>{usuario.usu_id}</td>
                   <td>{usuario.usu_email}</td>
                   <td>{usuario.usu_clave}</td>
                   <td>{usuario.usu_nombres}</td>

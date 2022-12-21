@@ -1,22 +1,16 @@
-import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/js/dist/collapse'
 import 'bootstrap/js/dist/offcanvas'
 import 'bootstrap/js/dist/dropdown'
 
-class MenuInicial extends Component {
-
-  state={
-    estaLogin: false
-  }
-
-  render() {
+function MenuInicial() {
     return (
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src="./logo.png" alt="logo" width={50} height={40}/>
+            <span> Marcadores de Deportes </span>
           </Link>
           <button
             className="navbar-toggler"
@@ -31,27 +25,23 @@ class MenuInicial extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link className="nav-link active" to="/PageInicio">
-                  Inicio
-                </Link>
-              </li>
-              <li className="nav-item" hidden={this.state.estaLogin}>
+              
+              <li className="nav-item" >
                 <Link className="nav-link" to="/PageLogin">
                   Login
                 </Link>
               </li>
-              <li className="nav-item" hidden={!this.state.estaLogin}>
-                <Link className="nav-link" to="/PageLogout">
-                  Salir
+              <li className="nav-item" >
+                <Link className="nav-link" to="/PageRegistro">
+                  Registro
                 </Link>
               </li>
+              
             </ul>
           </div>
         </div>
       </nav>
     );
-  }
 }
 
 export default MenuInicial;
