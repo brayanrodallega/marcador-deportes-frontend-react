@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import enpoints from "../connections/enpoints";
-
 import "../css/PageLogin.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import axios from "axios";
-
 import Cookies from "universal-cookie";
 
 const cookies = new Cookies();
-
 const urlLogin = enpoints.USUARIOS;
 
 class PageLogin extends Component {

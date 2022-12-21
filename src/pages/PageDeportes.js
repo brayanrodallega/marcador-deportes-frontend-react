@@ -1,6 +1,6 @@
 import enpoints from "../connections/enpoints";
 import axios from "axios";
-import { Component, useEffect, useState } from "react";
+import { Component } from "react";
 import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 
 const url = enpoints.DEPORTES;
