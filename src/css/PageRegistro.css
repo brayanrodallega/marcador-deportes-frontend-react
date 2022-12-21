@@ -32,9 +32,8 @@ body {
 }
 .title {
     font-size: var(--lg);
-    margin-bottom: 12px;
+    margin: 0 0 40px 0;
     text-align: start;
-    margin-bottom: 40px;
 }
 .form {
     display: flex;
@@ -73,6 +72,21 @@ body {
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
+}
+.secondary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.secondary-button a {
+    text-decoration: none;
+    color: var(--dark);
 }
 .login-button {
     margin-top: 14px;

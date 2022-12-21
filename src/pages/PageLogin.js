@@ -104,16 +104,18 @@ class PageLogin extends Component {
 
             <input
               type="submit"
-              value="Log in"
+              value="Entrar"
               className="primary-button login-button" onClick={() => {
                 this.iniciarSesion()
               }}
             />
 
-            <a href="/">Forgot my password</a>
+            <a href="/">Olvide mi contraseña</a>
           </form>
 
-          <button className="secondary-button signup-button">Sign up</button>
+          <button className="secondary-button signup-button" >
+            <a href="/PageRegistro">Registrarse</a>
+          </button>
         </div>
       </div>
     );

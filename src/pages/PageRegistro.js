@@ -35,11 +35,11 @@ function PageRegistro() {
     return (
         <div className="login">
         <div className="form-container">
-            <h1 className="title">My account</h1>
+            <h1 className="title">Crear cuenta</h1>
             <form action="/" className="form">
             <div>
                 <label htmlFor="name" className="label">
-                Name
+                Nombre
                 </label>
                 <input
                 type="text"
@@ -51,7 +51,7 @@ function PageRegistro() {
                 />
     
                 <label htmlFor="last-name" className="label">
-                Last name
+                Apellido
                 </label>
                 <input
                 type="text"
@@ -89,7 +89,7 @@ function PageRegistro() {
 
             <input
                 type="submit"
-                value="Create"
+                value="Crear"
                 className="primary-button login-button"
                 onClick={() => peticionPost()}
             />

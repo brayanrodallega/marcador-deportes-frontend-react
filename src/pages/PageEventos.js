@@ -1,11 +1,11 @@
-// 
-
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/PageEventos.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import React, { Component } from "react";
+
 
 const enpoints = require('../connections/enpoints');
 const fieldid = 'eve'
@@ -117,6 +117,7 @@ class PageEventos extends Component {
         const { form } = this.state;
         return (
             <>
+                <h1>Eventos</h1>
                 <br />
                 <button className="btn btn-success" onClick={() => { this.setState({ form: null, tipoModal: 'insertar' }); this.modalInsertar() }}>Registrar evento</button>
                 <br /><br />
