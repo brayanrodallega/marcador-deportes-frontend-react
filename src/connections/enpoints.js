@@ -1,7 +1,5 @@
 // Description: Endpoints de la API
-// const API = "http://localhost:9000/api";
-const API = "marcador-deportes-backend-mysql-production.up.railway.app/api";
-
+const API = process.env.REACT_APP_API_URL;
 
 // Endpoints evntos
 const LISTAR_5_EVENTOS = `${API}/eventos/5`;
