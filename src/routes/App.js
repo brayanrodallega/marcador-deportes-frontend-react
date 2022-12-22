@@ -12,7 +12,6 @@ import PageRegistro from "../pages/PageRegistro";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { useEffect, useState } from "react";
-import 'dotenv/config';
 
 
 const cookies = new Cookies();
